@@ -1,0 +1,2 @@
+Poczatek readme!
+
