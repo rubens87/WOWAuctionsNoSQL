@@ -54,7 +54,7 @@ json_sourceFile = options.jsonname
 
 
 #Connecting to db
-connection = Connection(host, options.dbport)
+connection = Connection(host, int(options.dbport))
 f=open(json_sourceFile, "r")
 post = json.loads(f.read())
 db = connection[dbname]
@@ -67,12 +67,12 @@ for element in post['alliance']['auctions']:
 #adding horde
 db = connection['horde']
 for element in post['horde']['auctions']:
-	post.insert(element)
+	posts.insert(element)
 
 #adding neutral
 db = connection['neutral']
-for element in post['netural']['auctions']:
-	post.insert(element)
+for element in post['neutral']['auctions']:
+	posts.insert(element)
 """
 posts = db.posts
 for post in post.find():

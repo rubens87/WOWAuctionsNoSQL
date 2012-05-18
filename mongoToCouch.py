@@ -16,23 +16,24 @@ from optparse import OptionParser
 parser = OptionParser()
 parser.add_option("-a", "--mongohost", dest="mongohost", help="set up host of mongodb, default = localhost", default="localhost", metavar="MHOST")
 parser.add_option("-b", "--mongoport", dest="mongoport", help="set port of mongodb - default = 27017", default=27017, metavar="MPORT")
-parser.add_option("-c", "--mongodb", dest="mongodb", help="set up mongodb name for export, default = wow-auctions", default="wow-auctions", metavar="MDBNAME")
+parser.add_option("-c", "--mongodb", dest="mongodb", help="set up mongodb name for export, default = burning_legion", default="burning_legion", metavar="MDBNAME")
 parser.add_option("-k", "--mdbcol", dest="mdbcol", help="set up mongodb collection name for export, default = auctions", default="auctions", metavar="MDBNAME")
 parser.add_option("-d", "--couchhost", dest="couchhost", help="set up target couchdb host", default="localhost", metavar="CDBHOST")
-parser.add_option("-e", "--couchport", dest="couchport", help="set up target couchdb port", default=5984, metavar="CDPORT")
+parser.add_option("-e", "--couchport", dest="couchport", help="set up target couchdb port", default='5984', metavar="CDPORT")
 parser.add_option("-f", "--couchdb", dest="couchdb", help="set up target couchdb name, default = wowauct", default="wowauct", metavar="CDBASE")
 (options, args) = parser.parse_args()
 
 # Connecting to Couchdb
-couchServer = couchdb.Server()
+couchServer = couchdb.Server('http://'+options.couchhost+':'+options.couchport)
+print options.couchdb
 try:
 	dbC = couchServer[options.couchdb]
-except ResourceNotFound:
+except:
 	dbC = couchServer.create(options.couchdb)
 
 # Connecting to Mongodb
 
-dbconnect = Connection()
+dbconnect = Connection(options.mongohost, int(options.mongoport))
 db = dbconnect[options.mongodb]
 kolekcja = db[options.mdbcol]
 
