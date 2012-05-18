@@ -54,6 +54,19 @@ mongo_mapreduce.py
 przy braku argumentów uruchomi sie:
 
     python mongo_mapreduce.py -n burning_legion -m localhost -p 27017
+
+wyniki po wykonaniu mapreduca:
+    {u'_id': u'Azureia', u'value': 359999999.0}
+    {u'_id': u'Wszou', u'value': 205000000.0}
+    {u'_id': u'Garterr', u'value': 204777777.0}
+    {u'_id': u'Sallamandra', u'value': 200000000.0}
+    {u'_id': u'Acandra', u'value': 172499900.0}
+    {u'_id': u'Waju', u'value': 148500000.0}
+    {u'_id': u'Nier', u'value': 100000000.0}
+    {u'_id': u'Vanad\xe1in', u'value': 100000000.0}
+    {u'_id': u'Dynamon', u'value': 99999900.0}
+    {u'_id': u'Troyanq', u'value': 99009897.0}
+
     
 
 
