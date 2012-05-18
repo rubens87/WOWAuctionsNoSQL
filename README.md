@@ -56,6 +56,7 @@ przy braku argumentów uruchomi sie:
     python mongo_mapreduce.py -n burning_legion -m localhost -p 27017
 
 wyniki po wykonaniu mapreduca:
+
     {u'_id': u'Azureia', u'value': 359999999.0}
     {u'_id': u'Wszou', u'value': 205000000.0}
     {u'_id': u'Garterr', u'value': 204777777.0}
