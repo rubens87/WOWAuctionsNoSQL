@@ -57,17 +57,17 @@ przy braku argumentów uruchomi sie:
 
 wyniki po wykonaniu mapreduca:
 
-    {u'_id': u'Azureia', u'value': 359999999.0}
-    {u'_id': u'Wszou', u'value': 205000000.0}
-    {u'_id': u'Garterr', u'value': 204777777.0}
-    {u'_id': u'Sallamandra', u'value': 200000000.0}
-    {u'_id': u'Acandra', u'value': 172499900.0}
-    {u'_id': u'Waju', u'value': 148500000.0}
-    {u'_id': u'Nier', u'value': 100000000.0}
-    {u'_id': u'Vanad\xe1in', u'value': 100000000.0}
-    {u'_id': u'Dynamon', u'value': 99999900.0}
-    {u'_id': u'Troyanq', u'value': 99009897.0}
+    {u'_id': u'Notuss', u'value': 260009740000.0}
+    {u'_id': u'Cokkrek', u'value': 13905556276.0}
+    {u'_id': u'Berkil', u'value': 9573459800.0}
+    {u'_id': u'Minimacfox', u'value': 8889330000.0}
+    {u'_id': u'Likantropus', u'value': 3804248423.0}
+    {u'_id': u'Hasiorbasior', u'value': 3247396866.0}
+    {u'_id': u'Killexpert', u'value': 2788016734.0}
+    {u'_id': u'Drumir', u'value': 2579003000.0}
+    {u'_id': u'Alvados', u'value': 1620598440.0}
+    {u'_id': u'Hodowanczuk', u'value': 1538123847.0}
+
 
     
-
 
